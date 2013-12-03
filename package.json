@@ -1,7 +1,7 @@
 {
     "name" : "spm-yuan",
     "description" : "Start a simple spm source server.",
-    "version" : "0.0.4",
+    "version" : "0.0.5",
     "homepage" : "https://github.com/spmjs/spm-yuan",
     "repository" : {
         "type" : "git",
@@ -27,9 +27,13 @@
         "uninstall" : "node scripts/uninstall.js"
     },
 
+    "engines" : {
+        "node" : "~0.10.x"
+    },
+
     "dependencies" : {
-        "connect" : "~2.7.6",
-        "connect-route" : "~0.1.3",
+        "express" : "~3.0",
+        "ejs" : "~0.8.4",
         "mkdirp" : "~0.3.5",
         "semver" : "~1.1.4",
         "async" : "~0.2.7",
